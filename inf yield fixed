@@ -19,7 +19,7 @@ end
 
 currentVersion = '5.9.4'
 
-local modiii = loadstring(game:HttpGet"https://raw.githubusercontent.com/ntopy/Flower/main/hop%20server")()
+local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/ntopy/Flower/main/hop%20server")()
 Holder = Instance.new("Frame")
 Title = Instance.new("TextLabel")
 Dark = Instance.new("Frame")
@@ -6750,7 +6750,7 @@ addcmd("autorejoin", {"autorj"}, function(args, speaker)
 end)
 
 addcmd("serverhop", {"shop"}, function(args, speaker)
-    modiii:Teleport(game.PlaceId)
+    module:Teleport(game.PlaceId)
 end)
 
 addcmd('joinplayer',{'joinp'},function(args, speaker)
